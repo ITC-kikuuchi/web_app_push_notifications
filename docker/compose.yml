@@ -1,0 +1,21 @@
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    container_name: myhome
+    ports:
+      - 80:80   # HTTP用
+      - "443:443"        # HTTPS用
+    depends_on:
+      - php
+    volumes:
+      - ../src/:/var/www/html
+
+
+  php:
+    build:
+      context: .
+      dockerfile: ./php/Dockerfile
+    volumes:
+      - ../src/:/var/www/html
