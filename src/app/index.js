@@ -32,8 +32,7 @@ if ("serviceWorker" in navigator) {
 /** Service Worker の準備が出来たら発火 */
 navigator.serviceWorker.ready.then((serviceWorkerRegistration) => {
   // 公開鍵を pushサーバー が要求する認証用キーにフォーマットする
-  applicationServerKey = urlBase64ToUint8Array("ここには公開鍵を入力"
-  );
+  applicationServerKey = urlBase64ToUint8Array("生成した鍵の公開鍵を入力");
 
   // 既存のサブスクリプションを取得
   serviceWorkerRegistration.pushManager
