@@ -5,8 +5,8 @@ ENV TZ=UTC
 
 # nginxの設定ファイルをコピー
 COPY ./nginx/*.conf /etc/nginx/conf.d/
-COPY ./certs/myhome.crt /etc/nginx/ssl/localhost.crt
-COPY ./certs/myhome.key /etc/nginx/ssl/localhost.key
+COPY ./certs/localhost.crt /etc/nginx/ssl/localhost.crt
+COPY ./certs/localhost.key /etc/nginx/ssl/localhost.key
 
 
 WORKDIR /var/www/html
