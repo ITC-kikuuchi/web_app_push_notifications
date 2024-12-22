@@ -55,5 +55,5 @@ $subscription = Subscription::create([
     'authToken' => 'サブスクリプションの push_auth_token の値を入力',
 ]);
 ```
-7. `src/app` にて `$ php Send.php` を実行
+7. `var/www/html/app` にて `$ php Send.php` を実行
 8. 通知を取得することができたら動作成功
