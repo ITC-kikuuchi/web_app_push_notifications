@@ -46,7 +46,8 @@ index.js
 3. ホーム画面に追加した アプリを起動
 4. Mac の safari を起動し、iPhone の Webインスペクタを起動し、コンソールを表示する
 5. 画面の「通知を許可」をタップし、通知を許可する
-6. コンソールに表示された `endpoint, push_public_key, push_auth_token` をコピーして、`Send.php` の下記の貼り付け
+6. コンソールに表示された `endpoint, push_public_key, push_auth_token` をコピーして、`Send.php` の下記の貼り付け  
+   （表示されない場合は、Webインスペクタからリロードすると、表示されるようになるかと思います。）
 ```php
 // サブスクリプション情報の作成
 $subscription = Subscription::create([
