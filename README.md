@@ -15,7 +15,7 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -subj "/CN=localhost" \
   -addext "subjectAltName=DNS:localhost,DNS:example.com,DNS:dev.local,IP:127.0.0.1"
 ```
-5. 生成した自己署名証明書をキーチェーンアクセスに登録し、信頼する証明書に変更する
+5. 生成した自己署名証明書（localhost.crt）をキーチェーンアクセスに登録し、信頼する証明書に変更する
 6. dockerコンテナを起動する
 7. https://localhost/index.html にアクセスして画面が表示されれば構築完了
 
