@@ -40,12 +40,12 @@ navigator.serviceWorker.ready.then((serviceWorkerRegistration) => {
     .then((oldSubscription) => {
       if (oldSubscription) {
         // サブスクリプションが存在する場合
-        console.log("古いのありまっせー");
+        console.log("既にサブスクリプションが存在します。");
         // ログ出力
         logSubscriptionDetail(oldSubscription);
       } else {
         // サブスクリプションが存在しない場合
-        console.log("新しいの作りまっせー");
+        console.log("新しいサブスクリプションを生成します。");
         // リクエストのオプションを作成
         const options = {
           userVisibleOnly: true,
